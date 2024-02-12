@@ -164,7 +164,7 @@ created3JSchart(data: any[]){
   polyline.transition().duration(1000)
   .attr('points', function(d: any) {
     var pos = outerArc.centroid(d);
-    pos[0] = radius * 0.6 * (midAngle(d) < Math.PI ? 1 : -1);
+    pos[0] = radius * 1 * (midAngle(d) < Math.PI ? 1 : -1);
     return `${arc.centroid(d)},${outerArc.centroid(d)},${pos[0]},${pos[1]}`;
   });
 
